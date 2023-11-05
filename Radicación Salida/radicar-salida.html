@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de gestión de documentos - FOCUS</title>
+  <link rel="stylesheet" href="Estilo-Rsalida.CSS">
+</head>
+<body>
+  <header>
+    <img src="Imagenesprin/LOGOS.png" alt="Imagen">
+    <h1>Sistema de gestión de documentos - FOCUS</h1>
+    <a href="#" class="cerrar-sesion">Cerrar Sesión</a>
+  </header>
+  <nav>
+    <ul class="opciones">
+      <li>
+        <a href="#" class="opcion">Radicacion</a>
+        <ul class="sub-opciones">
+          <li><a href="radicar-entrada.html">Radicar entrada</a></li>
+          <li><a href="radicar-salida.html">Radicar salida</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="opcion">Expedientes</a>
+        <ul class="sub-opciones">
+          <li><a href="crear-expedientes.html">Crear expedientes</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+   <!-- Agregamos el formulario de Radicación de Entrada -->
+   <div class="formulario">
+    <h2>Radicación de Salida</h2>
+    <form>
+      <label for="fecha">Fecha Documento:</label>
+      <input type="date" id="fecha" name="fecha"><br><br>
+
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto"><br><br>
+
+      <label for="medio">Medio de Envio:</label>
+      <select id="medio" name="medio">
+        <option value="personal">Personal</option>
+        <option value="correo">Correo Electrónico</option>
+      </select><br><br>
+      
+      <label for="destinatario">Correo o Dirección de Envio</label>
+      <textarea id="descripcion" name="descripcion" rows="4"></textarea><br><br>
+
+      <label for="folios">No de Folios:</label>
+      <input type="number" id="folios" name="folios"><br><br>
+
+      <label for="anexos">No. Anexos:</label>
+      <input type="number" id="anexos" name="anexos"><br><br>
+
+      <label for="desc-anexos">Descripción de Anexos:</label>
+      <textarea id="desc-anexos" name="desc-anexos" rows="4"></textarea><br><br>
+
+      <label for="imagen">Imagen Principal:</label>
+      <input type="file" id="imagen" name="imagen"><br><br>
+
+      <label for="archivos">Anexos:</label>
+      <input type="file" id="archivos" name="archivos"><br><br>
+
+      <input type="submit" value="Radicar Documento">
+    </form>
+  </div>
+</body>
+<footer class="pie-de-pagina">
+  <p>&copy; Sebastian Rubiano Moscoso - 2023</p>
+</footer>
+</html>
+<!--Acá Acaba el encabezado-->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de gestión de documentos - FOCUS</title>
+  <link rel="stylesheet" href="Estilo-Buscar.CSS">
+</head>
+<body>
+  <header>
+    <img src="Imagenesprin/LOGOS.png" alt="Imagen">
+    <h1>Sistema de gestión de documentos - FOCUS</h1>
+    <a href="#" class="cerrar-sesion">Cerrar Sesión</a>
+  </header>
+  <nav>
+    <ul class="opciones">
+      <li>
+        <a href="#" class="opcion">Radicacion</a>
+        <ul class="sub-opciones">
+          <li><a href="radicar-entrada.html">Radicar entrada</a></li>
+          <li><a href="radicar-salida.html">Radicar salida</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="opcion">Expedientes</a>
+        <ul class="sub-opciones">
+          <li><a href="crear-expedientes.html">Crear expedientes</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+   <!-- Agregamos el formulario de Radicación de Entrada -->
+   <div class="formulario">
+    <h2>Buscar</h2>
+    <form>
+      <label for="medio">Tipo de Busqueda:</label>
+      <select id="medio" name="medio">
+        <option value="personal">Radicados</option>
+        <option value="correo">Expediente</option>
+      </select><br><br>
+
+      <label for="fecha">Fecha Inicial:</label>
+      <input type="date" id="fecha" name="fecha"><br><br>
+      <label for="fecha">Fecha Final:</label>
+      <input type="date" id="fecha" name="fecha"><br><br>
+
+      <label for="asunto">Numero Radicado o Expediente</label> 
+      <input type="text" id="asunto" name="asunto"><br><br>
+
+      <input type="submit" value="Buscar">
+    </form>
+  </div>
+</body>
+<footer class="pie-de-pagina">
+  <p>&copy; Sebastian Rubiano Moscoso - 2023</p>
+</footer>
+</html>
+<!--Acá Acaba el encabezado-->

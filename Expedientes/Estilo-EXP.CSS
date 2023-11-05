@@ -1,0 +1,140 @@
+/* DiseñoPrincipal.css */
+html {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #60af7bdc;
+    color: white;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cerrar-sesion {
+    margin-left: auto;
+    color: white;
+    text-decoration: none;
+  }
+  
+  header img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    flex: 1;
+  }
+  
+  .opciones {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Alinea las opciones a la derecha */
+  }
+  
+  .opciones > li {
+    position: relative;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  .opciones > li > a {
+    display: block;
+    padding: 5px 10px;
+    background-color: #7d9385dc;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+  }
+  
+  .sub-opciones {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #7d9385dc;
+    padding: 5px 10px;
+    width: max-content;
+    list-style-type: none;
+    border-radius: 15px;
+  }
+  
+  .sub-opciones a {
+    display: block;
+    padding: 5px 0;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .opciones > li:hover .sub-opciones {
+    display: block;
+  }
+  .pie-de-pagina {
+    background-color: #60af7b; /* Cambio en el valor de color */
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Diseño Radicación de Entrada*/
+  .formulario {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formulario h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .formulario input[type="text"],
+  .formulario input[type="number"],
+  .formulario select,
+  .formulario textarea,
+  .formulario input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .formulario textarea {
+    resize: vertical;
+  }
+  
+  .formulario input[type="submit"] {
+    background-color: #60af7bdc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formulario input[type="submit"]:hover {
+    background-color: #60af7b;
+  }
